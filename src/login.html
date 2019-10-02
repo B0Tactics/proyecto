@@ -97,17 +97,12 @@
 				</div>
 
 				<div class="col-sm-5 col-lg-5 col-lg-offset-1 mt40-xs">
-					<form role="form" id="login_form" class="login-form mb40-xs" action ="" method="put">
-                        <h3 class="no-margin-top mb20">Login</h3>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="User name" required="required">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Password" required="required">
-                        </div>
-                        <div class="form-group no-margin-bottom mt20">                           
-                            <button class  ="btn btn-primary" onclick="location.href='index.html'">Login</button>
-                        </div>
+					<form role="form" id="login_form" class="login-form mb40-xs" action ="http://18.232.91.244:3002/users/" method="get">
+                        <label for="name">Name</label>
+				        <input class="form-control" type="text" name="name">
+				        <label  for="password">Pasword</label>
+				        <input class="form-control" type="text" name="password">
+				        <input class="btn btn-primary" type="submit">
                     </form>
 				</div><!-- /.column -->
 			</div><!-- /.vertical center -->
