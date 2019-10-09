@@ -8,10 +8,10 @@
 		<version>2.1.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>accessing-data-mysql</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>accessing-data-mysql</name>
+	<groupId>edu.eci.arsw</groupId>
+        <artifactId>proyecto </artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <name>proyecto </name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

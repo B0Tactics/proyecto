@@ -1,5 +1,7 @@
-package com.example.accessingdatamysql;
+package edu.eci.arsw.controller;
 
+import edu.eci.arsw.model.User;
+import edu.eci.arsw.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

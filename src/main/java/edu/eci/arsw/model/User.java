@@ -1,4 +1,4 @@
-package com.example.accessingdatamysql;
+package edu.eci.arsw.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
