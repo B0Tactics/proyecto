@@ -1,7 +1,7 @@
-package main.java.edu.eci.arsw.acount.service;
-import main.java.edu.eci.arsw.acount.model.User;
-import main.java.edu.eci.arsw.acount.repository.RoleRepository;
-import main.java.edu.eci.arsw.acount.repository.UserRepository;
+package edu.eci.arsw.acount.service;
+import edu.eci.arsw.acount.model.User;
+import edu.eci.arsw.acount.repository.RoleRepository;
+import edu.eci.arsw.acount.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

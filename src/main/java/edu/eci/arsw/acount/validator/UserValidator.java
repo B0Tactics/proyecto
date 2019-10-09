@@ -1,7 +1,7 @@
-package main.java.edu.eci.arsw.acount.validator;
+package edu.eci.arsw.acount.validator;
 
-import main.java.edu.eci.arsw.acount.model.User;
-import main.java.edu.eci.arsw.acount.service.UserService;
+import edu.eci.arsw.acount.model.User;
+import edu.eci.arsw.acount.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
@@ -35,8 +35,6 @@ public class UserValidator implements Validator {
             errors.rejectValue("password", "Size.userForm.password");
         }
 
-        if (!user.getPasswordConfirm().equals(user.getPassword())) {
-            errors.rejectValue("passwordConfirm", "Diff.userForm.passwordConfirm");
-        }
+        
     }
 }

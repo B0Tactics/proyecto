@@ -1,7 +1,7 @@
-package main.java.edu.eci.arsw.acount.service;
-import main.java.edu.eci.arsw.acount.model.Role;
-import main.java.edu.eci.arsw.acount.model.User;
-import main.java.edu.eci.arsw.acount.repository.UserRepository;
+package edu.eci.arsw.acount.service;
+import edu.eci.arsw.acount.model.Role;
+import edu.eci.arsw.acount.model.User;
+import edu.eci.arsw.acount.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

@@ -1,4 +1,4 @@
-package main.java.edu.eci.arsw.acount.model;
+package edu.eci.arsw.acount.model;
 import javax.persistence.*;
 import java.util.Set;
 
@@ -7,8 +7,9 @@ import java.util.Set;
 public class User {
     private Long id;
     private String username;
+    private String name;
+    private String email;
     private String password;
-    private String passwordConfirm;
     private Set<Role> roles;
 
     @Id
@@ -37,13 +38,19 @@ public class User {
         this.password = password;
     }
 
-    @Transient
-    public String getPasswordConfirm() {
-        return passwordConfirm;
+    
+    public String getEmail() {
+        return email;
     }
 
-    public void setPasswordConfirm(String passwordConfirm) {
-        this.passwordConfirm = passwordConfirm;
+    public void setEmail(String email) {
+        this.email=email; 
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(String name) {
+        this.name=name; 
     }
 
     @ManyToMany

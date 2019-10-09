@@ -1,4 +1,4 @@
-package main.java.edu.eci.arsw.acount.service;
+package edu.eci.arsw.acount.service;
 public interface SecurityService {
     String findLoggedInUsername();
 

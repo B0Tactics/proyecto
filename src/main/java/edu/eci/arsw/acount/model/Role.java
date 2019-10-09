@@ -1,4 +1,4 @@
-package main.java.edu.eci.arsw.acount.model;
+package edu.eci.arsw.acount.model;
 import javax.persistence.*;
 import java.util.Set;
 

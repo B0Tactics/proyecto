@@ -1,9 +1,8 @@
-package main.java.edu.eci.arsw.acount.web;
+package edu.eci.arsw.acount.web;
 
-import main.java.edu.eci.arsw.acount.model.User;
-import main.java.edu.eci.arsw.acount.service.SecurityService;
-import main.java.edu.eci.arsw.acount.service.UserService;
-import main.java.edu.eci.arsw.acount.validator.UserValidator; 
+import edu.eci.arsw.acount.model.User;
+import edu.eci.arsw.acount.service.UserService;
+import edu.eci.arsw.acount.validator.UserValidator; 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,8 +16,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Autowired
-    private SecurityService securityService;
 
     @Autowired
     private UserValidator userValidator;
@@ -30,7 +27,7 @@ public class UserController {
         return "registration";
     }
 
-    @RequestMapping(value = "/registration", method = RequestMethod.POST)
+    @RequestMapping(value = "/users", method = RequestMethod.POST)
     public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult, Model model) {
         userValidator.validate(userForm, bindingResult);
 
@@ -40,12 +37,11 @@ public class UserController {
 
         userService.save(userForm);
 
-        securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
 
         return "redirect:/welcome";
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) {
         if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
