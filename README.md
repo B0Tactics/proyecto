@@ -113,5 +113,5 @@ https://tree.taiga.io/project/nicolaspatino-b0tacticsio/backlog
         estilo, las páginas HTML e incluso las imágenes se pueden utilizar también como tales, lo cual da un extra de potencia muy
         interesante.
 ## *Integracion Continua*
-[![CircleCI](https://circleci.com/gh/MonitoriasSAS/proyecto.svg?style=svg)](https://circleci.com/gh/B0Tactics)
+[![CircleCI](https://circleci.com/gh/b0tactics/proyecto.svg?style=svg)](https://circleci.com/gh/B0Tactics)
 
