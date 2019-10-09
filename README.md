@@ -112,4 +112,6 @@ https://tree.taiga.io/project/nicolaspatino-b0tacticsio/backlog
         + Una de las muchas cosas interesantes de Webpack es que no solo el código JavaScript se considera un módulo. Las hojas de
         estilo, las páginas HTML e incluso las imágenes se pueden utilizar también como tales, lo cual da un extra de potencia muy
         interesante.
+## *Integracion Continua*
+[![CircleCI](https://circleci.com/gh/MonitoriasSAS/proyecto.svg?style=svg)](https://circleci.com/gh/B0Tactics)
 
