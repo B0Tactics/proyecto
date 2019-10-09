@@ -22,7 +22,7 @@ function setup() {
 
 //responsive magia :V
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth-20, windowHeight-20);
 }
 
 function draw() {
