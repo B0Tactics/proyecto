@@ -1,13 +1,4 @@
-edu\eci\arsw\acount\service\UserServiceImpl.class
-edu\eci\arsw\acount\service\UserService.class
-edu\eci\arsw\acount\repository\UserRepository.class
-edu\eci\arsw\acount\model\Role.class
-edu\eci\arsw\acount\model\User.class
-edu\eci\arsw\acount\service\SecurityServiceImpl.class
-edu\eci\arsw\acount\service\UserDetailsServiceImpl.class
-edu\eci\arsw\acount\service\SecurityService.class
-edu\eci\arsw\acount\validator\UserValidator.class
-edu\eci\arsw\acount\web\UserController.class
-edu\eci\arsw\acount\repository\RoleRepository.class
-.netbeans_automatic_build
-edu\eci\arsw\api\apiAplication.class
+com\example\accessingdatamysql\User.class
+com\example\accessingdatamysql\AccessingDataMysqlApplication.class
+com\example\accessingdatamysql\MainController.class
+com\example\accessingdatamysql\UserRepository.class
