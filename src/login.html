@@ -12,6 +12,10 @@
     	body{margin-top:20px;}
 /* =Jumbotron login
 -------------------------------------------------------------- */
+label {
+ color: black;
+ font-weight: bold;
+}
 .jumbotron.jumbotron-login {
     height: 100%;
     width: 100%;
@@ -82,7 +86,7 @@
 }
     </style>
 </head>
-<body>
+<body background="fondo.jpg" bgcolor="FFCECB">
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <div id="home" class="jumbotron jumbotron-login">
@@ -99,11 +103,11 @@
 				<div class="col-sm-5 col-lg-5 col-lg-offset-1 mt40-xs">
 					<form role="form" id="login_form" class="login-form mb40-xs" action ="http://18.232.91.244:3002/users/" method="get">
 						<h3 class="no-margin-top mb20">Login</h3>
-                        <label for="name">Name</label>
+                        <label for="name">User</label>
 				        <input class="form-control" type="text" name="name">
-				        <label  for="password">Pasword</label>
+				        <label  for="password">Password</label>
 				        <input class="form-control" type="text" name="password">
-				        <input  type="button" value="register" class  ="btn btn-primary" onclick="location.href='index.html'" >Register
+				        <input  type="button" value="Login" class  ="btn btn-primary" onclick="location.href='index.html'" >
                     </form>
 				</div><!-- /.column -->
 			</div><!-- /.vertical center -->
