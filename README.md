@@ -115,3 +115,6 @@ https://tree.taiga.io/project/nicolaspatino-b0tacticsio/backlog
 ## *Integracion Continua*
 [![CircleCI](https://circleci.com/gh/B0Tactics/proyecto.svg?style=svg)](https://circleci.com/gh/B0Tactics)
 
+## *juegue!*
+https://b0tactics.herokuapp.com/welcome.html
+
