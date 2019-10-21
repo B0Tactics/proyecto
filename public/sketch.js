@@ -6,7 +6,7 @@ var blobs = [];
 var zoom = 1;
 
 
-console.log(windowWidth,windowHeight);
+
 
 function setup() {
   createCanvas(windowWidth-20, windowHeight-20);
