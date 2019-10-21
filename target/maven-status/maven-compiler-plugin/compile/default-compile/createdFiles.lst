@@ -1,0 +1,4 @@
+edu\eci\arsw\controller\MainController.class
+edu\eci\arsw\repository\UserRepository.class
+edu\eci\arsw\AccessingDataMysqlApplication.class
+edu\eci\arsw\model\User.class
