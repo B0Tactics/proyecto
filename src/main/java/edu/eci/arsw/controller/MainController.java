@@ -1,18 +1,19 @@
 package edu.eci.arsw.controller;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import edu.eci.arsw.model.User;
 import edu.eci.arsw.repository.UserRepository;
@@ -38,6 +39,23 @@ public class MainController {
 		userRepository.save(n);
 		return "Saved";
 	}
+	@RequestMapping(path = "/{name}/{email}/{user}/{password}",method = RequestMethod.PUT)	
+	public ResponseEntity<?> PutBlueprint(@PathVariable ("name") String name, @PathVariable ("email") String email,
+	 @PathVariable ("user") String user1,@PathVariable ("password") String password, @RequestBody User newU ){
+        
+        try {
+            User n = new User();
+			n.setName(name);
+			n.setEmail(email);
+			n.setUser(user1);
+			n.setPassword(password);
+		userRepository.save(n);
+            return new ResponseEntity<>(HttpStatus.CREATED);
+        } catch (Exception ex) {
+            Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
+            return new ResponseEntity<>(ex.getMessage(),HttpStatus.FORBIDDEN);
+        }
+    }
 
 	 @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> GetAllBlueprintFilter(){
