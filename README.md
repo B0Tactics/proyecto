@@ -115,6 +115,8 @@ https://tree.taiga.io/project/nicolaspatino-b0tacticsio/backlog
 ## *Integracion Continua*
 [![CircleCI](https://circleci.com/gh/B0Tactics/proyecto.svg?style=svg)](https://circleci.com/gh/B0Tactics)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/10c311dde512425c9dc49f0b071e4b52)](https://www.codacy.com/manual/nicolaspatino/proyecto?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=B0Tactics/proyecto&amp;utm_campaign=Badge_Grade)
+
 ## *juegue!*
 https://b0tactics.herokuapp.com/welcome.html
 
