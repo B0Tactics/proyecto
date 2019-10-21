@@ -96,6 +96,11 @@ https://tree.taiga.io/project/nicolaspatino-b0tacticsio/backlog
 
 ![](img/Clases.PNG)
 
+## Diagrama de despliegue
+
+![](img/deplyment.PNG)
+
+
 ## Software posiblemente a usar para la iniciacion del proyecto.
 
    + ### express:
