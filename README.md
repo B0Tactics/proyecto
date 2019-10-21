@@ -105,7 +105,10 @@ https://tree.taiga.io/project/nicolaspatino-b0tacticsio/backlog
    + ### socket.io:
        + es una librería que nos permite manejar eventos en tiempo real mediante una conexión TCP y todo ello en JavaScript. Es
        realmente potente y podremos hacer que el real time en nuetra aplicacion sea realmente optimo.
-       
+
+## *Manual de Usuario*
+      
+https://github.com/B0Tactics/proyecto/blob/master/img/Manual%20de%20usuario.pdf
 
 ## *Integracion Continua*
 [![CircleCI](https://circleci.com/gh/B0Tactics/proyecto.svg?style=svg)](https://circleci.com/gh/B0Tactics)
