@@ -88,10 +88,13 @@ _las historias de usuario estarán disponibles en el siguiente link:_
 https://tree.taiga.io/project/nicolaspatino-b0tacticsio/backlog
 
 
-## Diagrama de Arquitectura General del proyecto
+## Diagrama caso de uso usuario
 
+![](img/Casos_de_uso_user.PNG)
 
-![](img/arquitecture.png)
+## Diagrama de clases inicial
+
+![](img/Clases.PNG)
 
 ## Software posiblemente a usar para la iniciacion del proyecto.
 
@@ -103,15 +106,7 @@ https://tree.taiga.io/project/nicolaspatino-b0tacticsio/backlog
        + es una librería que nos permite manejar eventos en tiempo real mediante una conexión TCP y todo ello en JavaScript. Es
        realmente potente y podremos hacer que el real time en nuetra aplicacion sea realmente optimo.
        
-   + ### webpack:
-       + es un empaquetador de modulos asimples palabras pero tiene caracteristicas que podrian brindarnos a este proyecto como:
-        + separando el código en módulos que luego se utilizan como dependencias en otros módulos. Una de las cosas que hace
-           realmente bien Webpack es la gestión de esos módulos y de sus dependencias, pero también puede usarse para cuestiones como
-           concatenación de código, minimización y ofuscación, verificación de buenas prácticas (linting), carga bajo demanda de
-           módulos, etc...
-        + Una de las muchas cosas interesantes de Webpack es que no solo el código JavaScript se considera un módulo. Las hojas de
-        estilo, las páginas HTML e incluso las imágenes se pueden utilizar también como tales, lo cual da un extra de potencia muy
-        interesante.
+
 ## *Integracion Continua*
 [![CircleCI](https://circleci.com/gh/B0Tactics/proyecto.svg?style=svg)](https://circleci.com/gh/B0Tactics)
 
