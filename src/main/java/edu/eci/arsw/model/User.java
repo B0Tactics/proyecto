@@ -1,5 +1,6 @@
 package edu.eci.arsw.model;
 
+import java.util.ArrayList;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,7 +19,19 @@ public class User {
 	private String user;
 	
 	private String password;
+        
+        private ArrayList<Integer> puntajes = new ArrayList<Integer>();
 
+    public ArrayList<Integer> getPuntajes() {
+        return puntajes;
+    }
+    public void addPuntaje(Integer in){
+        puntajes.add(in);
+    }
+    public void setPuntajes(ArrayList<Integer> puntajes) {
+        this.puntajes = puntajes;
+    }
+        
 	public Integer getId() {
 		return id;
 	}
