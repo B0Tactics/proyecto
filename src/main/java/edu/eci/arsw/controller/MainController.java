@@ -66,4 +66,20 @@ public class MainController {
             return new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
         }
     }
+     @RequestMapping(path ="/{name}",method = RequestMethod.GET)
+    public ResponseEntity<?> GetUserByname(@PathVariable ("name") String userName){
+        try {
+            User n =null ;
+            for(User user:userRepository.findAll()){
+                if(user.getName().equals(userName)){
+                    n=user;
+                }
+            }
+            return new ResponseEntity<>(n,HttpStatus.ACCEPTED);
+        } catch (Exception e) {
+            Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, e);
+            return new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
+        }        
+    }
+    
 }
