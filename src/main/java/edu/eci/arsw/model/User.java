@@ -20,7 +20,7 @@ public class User {
 	
 	private String password;
         
-        private ArrayList<Integer> puntajes = new ArrayList<Integer>();
+        private ArrayList<Integer> puntajes ;
 
     public ArrayList<Integer> getPuntajes() {
         return puntajes;

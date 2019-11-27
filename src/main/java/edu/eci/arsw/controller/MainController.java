@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import edu.eci.arsw.model.User;
 import edu.eci.arsw.repository.UserRepository;
+import java.util.ArrayList;
 
 @Controller    // This means that this class is a Controller
 @RequestMapping(value = "/users") // This means URL's start with /demo (after Application path)
@@ -44,17 +45,23 @@ public class MainController {
 
     @RequestMapping(path = "/{name}/{puntaje}",method = RequestMethod.PUT)
     public @ResponseBody
-    String addNewScore(@PathVariable("name") String UserName, @PathVariable("puntaje")Integer puntaje, @RequestBody User newUser ) {
+    String addNewScore(@PathVariable("name") String UserName, @PathVariable("puntaje")Integer puntaje ) {
         // @ResponseBody means the returned String is the response, not a view name
         // @RequestParam means it is a parameter from the GET or POST request
         User n = null;
         for (User user : userRepository.findAll()) {
             if (user.getName().equals(UserName)) {
                 n = user;
+                userRepository.delete(n);
             }
         }
-        System.out.println(n.getName());
+        //System.out.println(n.getName());
+        if (n.getPuntajes()==null){
+            ArrayList<Integer> newp =new ArrayList<Integer>();
+            n.setPuntajes(newp);
+        }
         n.addPuntaje(puntaje);
+        userRepository.save(n);
         return "Created";
     }
 
